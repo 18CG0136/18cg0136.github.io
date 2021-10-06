@@ -1,0 +1,146 @@
+/*Por etiqueta*/
+body{
+
+    height: 645px;
+    background-color: rgb(0, 0, 1);
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+}
+h1{
+    color: rgb(179, 17, 17);
+    font-weight: lighter;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+h1 span{
+    color: white;
+}
+button{
+    background-color:burlywood;
+    color: black;
+
+    
+}
+#btnInicio{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40%;
+    color: rgb(179, 17, 17);
+    font-weight: bold; 
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 8px 24px 47px 0px rgba(218 ,218,218,0.75);
+}
+#barril{
+    bottom: 3%;
+    left: 35%;
+    width: 100px;
+    transform: rotate(18deg); 
+    position: absolute;
+    animation-name: barrilanim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+#barril img{
+    width: 100%;
+}
+#perso{
+    left: 20%;
+    top: -3%;
+    width: 80px;
+    position: absolute;
+    animation-name: persoAnim;
+    animation-duration: 10s;
+   
+
+}
+#perso img{
+    width: 200%;
+}
+#barril2{
+    bottom: 3%;
+    right: 32%;
+    width: 100px;
+    transform: rotate(-18deg); 
+    position: absolute;
+    animation-name: barril2Anim;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+
+}
+#barril2 img{
+    width: 100%;
+}
+#logodk{
+    left: 90%;
+    width: 100px;
+    position: absolute;
+    transition: 2s ease-in all;
+}
+#logodk img{
+    width: 100%;
+}
+@keyframes persoAnim {
+    0%{
+        top: -3%;
+        left: 20%;
+    }
+    20%{
+        top: 0%;
+        left: 35%;
+    }
+    30%{
+        top: 19%;
+        left: 35%;
+    }
+    40%{
+        top: 68%;
+        left: 60%;
+        transform: scale(1);
+    }
+    50%{
+        top: 68%;
+        left: 60%;
+        transform: rotate(18deg);
+        transform: scale(0);
+
+    }
+    
+}
+@keyframes barrilanim {
+    /*from{
+        transform: rotate(18deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }*/
+    0%{
+        transform: rotate(18deg);
+    }
+    50%{
+        transform: rotate(72deg);
+    }
+    100%{
+        transform: rotate(18deg);
+    }
+}
+#logodk:hover{
+    transform: scale(0.5);
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    border-radius: 50px;
+}
+@keyframes barril2Anim {
+    0%{
+        transform: rotate(18deg);
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(18deg);
+    }
+}
