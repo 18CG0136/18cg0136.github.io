@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+    min-width: 100%;
+    min-height: 100%;
+}
+#caja1{
+    background-color: rgb(0, 154, 201);
+    width: 100%;
+    height: 50px;
+}
+#caja1 .item{
+    background-color: red;
+    width: 10%;
+    float: left;
+    height: 20px;
+    margin-top: 1%;
+    margin-right:205px; 
+    margin-left: 270px;   
+}
+#Caja2{
+    background-color: yellow;
+    height: 700px;
+    width: 100%;
+    
+}
+#Caja2 .item2{
+    background-color: red;
+    display:inline-block;
+    width: 800px;
+    height: 80%;
+    margin-top: 6%;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#Caja3{
+    background-color: rgb(66, 32, 66);
+    width: 100%;
+    height: 500px;
+}
+#Caja3 .item3{
+    background-color: rgba(21, 167, 111, 0.637);
+    display: inline-grid;
+    width: 18%;
+    height: 300px;
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-right: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 14px 9px 4px rgba(0,0,0,0.72);
+}
+#Caja4{
+    width: 100%;
+    height: 500px;
+}
+#Caja4 .item4{
+    width: 676px;
+    height: 100%;
+    margin-left: 0px;
+    margin-right: -14px;
+    display: inline-block;
+    background-color: lawngreen;
+}
+#Caja4 .item4:first-child{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+#Caja4 .item4:last-child{
+    background-color: black;
+}
