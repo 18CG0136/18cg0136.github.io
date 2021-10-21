@@ -58,10 +58,11 @@ header nav ul li a:hover{
 section#main{
     background-color: black;
     height: 100vh;
+    overflow: hidden;
 }
 #main video{
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 #main #overlay{
     width: 100%;
@@ -75,19 +76,19 @@ section#main{
   /*  opacity: 0.2;*/
 
     }
-    #main #overlay h2{
+#main #overlay h2{
         margin-top: 225px;
         color: white;
         text-align: center;
         font-size: 6rem;
-    }
-    #main #overlay h3{
+}
+#main #overlay h3{
         color: white;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-size: 2rem;
-    }
-    .btn{
+}
+.btn{
         width: 180px;
         height: 50px;
         border: none;
@@ -97,13 +98,160 @@ section#main{
         font-weight: lighter;
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .btnprimary{
+ }
+.btnprimary{
         background-color: var(--main-color);
         color: white;
         text-transform: uppercase;
-    }
-    a.btn{
+}
+a.btn{
         text-decoration: none;
 
-    }
+}
+#about, #contacto{
+        width: 85%;
+        height: 700px;
+        padding-left: 5%;
+        padding-right: 5%;
+}
+#about .col, #conrtacto .col{
+    float: left;
+    width: 50%;
+}
+#about > h2{
+ text-align: center;
+ font-size: 3rem;
+ padding-top: 30;
+ font-family: 'Open Sans', sans-serif;
+}
+#about > .col > h2{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter; 
+}
+#about .col img{
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+}
+#about .col p{
+    margin-top: 50px;
+}
+#proyectos{
+    width: 85%;
+    height: 500px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+ #proyectos >h2{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; 
+}
+#proyectos .sitio{
+    background-color:white;
+    width: 22%;
+    height: 300px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius:20px;
+}
+
+.sitio img{
+    width:100%;
+    border-radius: 21px 21px 0px 0px;
+}
+#proyectos .sitio > h3{
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.btn1{
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 55px;
+    margin-right: 20px;
+    
+    
+  
+
+}
+.btnSecondary{
+    background-color: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+}
+a.btn1{
+    text-decoration: none;
+
+}
+#imagen{
+    
+    width: 100%;
+    height: 200px;
+    
+}
+#imagen .hack{
+    width: 25%;
+    height: 200px;
+    display:initial;
+    margin-left: 6px;
+    margin-right: 5px;
+    
+    
+   
+}
+.hack img{
+    width: 49%;
+    height: 200px;
+}
+#contacto, #formularioymap{
+    width: 85%;
+    height: 700px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#contacto .formularioymap{
+float: left;
+width: 50%;
+}
+#contacto .formularioymap > h2{
+text-align: center;
+font-size: 3rem;
+padding-top: 30;
+font-family: 'Open Sans', sans-serif;
+}
+#contacto > .formularioymap > h2{
+font-size: 2rem;
+font-family: 'Open Sans', sans-serif;
+font-weight: lighter;
+}
+#inf{
+    width: 100%;
+    height: 30px;
+  
+}
+#inf .in{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#inf >.in h3{
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
