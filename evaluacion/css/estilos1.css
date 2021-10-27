@@ -1,0 +1,70 @@
+:root{
+    --main-color:#3f4bbb;
+    --text-color:black;
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(119, 119, 119, 0.753);
+   font-family: 'Open Sans', sans-serif;
+}
+h1{
+ font-family: 'Irish Grover', cursive;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 4;
+}
+header #menu{
+    margin: 3px;
+    margin-left: 10px;
+    width: 100px;
+    color: white;
+}
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    transform: 0.5s ease-in all;
+}
+header nav ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:white;
+}
+header nav ul li:hover{
+    opacity: 0.8;
+    background-color: white;
+    border-radius: 3px;
+}
+header nav ul a:hover{
+    margin: 10px;
+    color: var(--main-color);
+}
+section#iniciar{
+   
+    height: 100vh;
+    overflow: hidden;
+}
+#iniciar{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}
+#iniciar form{
+    font-size: 1.3rem;
+}
