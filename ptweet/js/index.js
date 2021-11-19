@@ -1,6 +1,8 @@
 window.onload=()=>{
     let usuario= JSON.parse(localStorage.getItem("usuario"));
     document.getElementById("imgUser").scr="./img/"+usuario.imagen;
+    var xobj=new XMLHttpRequest();
+    xobj.overrideMimeType("application/json")
     let arrayTw=[];
    // console.log(usuario);
     //document.getElementById("usuario").innerHTML="Hola "+usuario.nombre;
